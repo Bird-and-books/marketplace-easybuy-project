@@ -27,7 +27,19 @@ export default function SmallSlider({
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <div className="relative w-full max-w-full lg:max-w-[80%] mx-auto mb-16 lg:px-0 overflow-visible">
+    <div
+      className="
+      relative
+      w-full
+      max-w-screen-xl
+      mx-auto
+      mb-16
+      px-4
+      lg:px-0
+      overflow-visible
+      flex
+      items-center justify-center"
+    >
       <SliderArrow
         direction="left"
         onClick={() => swiperRef.current?.slidePrev()}
@@ -59,18 +71,22 @@ export default function SmallSlider({
           },
         }}
         grabCursor={true}
-        className="w-full overflow-visible"
+        className="w-full  h-[220px] items-center"
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
       >
         {images.map((img, index) => (
-          <SwiperSlide key={index} className="flex items-center justify-center">
+          <SwiperSlide
+            key={index}
+            className="flex items-center justify-center overflow-visible h-auto"
+          >
             <div
               className="
                 flex items-center justify-center rounded-[24px]
                 bg-white2
-                w-[100px] h-[100px] lg:w-[182px] lg:h-[184px]
+                w-[100px] h-[100px] lg:w-[184px] lg:h-[184px]
+                shadow-1
               "
             >
               {isFixedSize ? (
