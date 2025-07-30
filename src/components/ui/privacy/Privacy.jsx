@@ -1,22 +1,17 @@
 import Link from 'next/link.js';
 import CopyrightIcon from '../../icons/CopyrightIcon.jsx';
-import style from './Privacy.module.scss';
 
 const Privacy = () => {
   return (
-    <div className={style.wrapper}>
-      <div className={style.text}>
+    <div className="flex text-sm text-white font-medium gap-x-8 items-center">
+      <div className="flex gap-x-2">
         <CopyrightIcon />
         <p>Easybuy.2024</p>
         <p>All rights reserved</p>
       </div>
-      <div className={style.link}>
-        <Link href="!#" className={style.link}>
-          Privacy Policy
-        </Link>
-        <Link href="!#" className={style.link}>
-          User Agreement
-        </Link>
+      <div className="flex text-base gap-x-5">
+        <Link href="!#">Privacy Policy</Link>
+        <Link href="!#">User Agreement</Link>
       </div>
     </div>
   );

@@ -7,16 +7,17 @@ import style from './Footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer className={style.footer}>
-      <div className={style.container}>
-        <div className={style.logo}>
+    <footer className="hidden md:block bg-main pt-6 pb-7">
+      <div className="container">
+        <div className="flex justify-left mb-13">
           <LogoFooter />
         </div>
-        <div className={style.wrapper}>
+
+        <div className="flex justify-between ">
           <FooterList />
           <FooterSeller />
         </div>
-        <div className={style.social}>
+        <div className="flex justify-between max-w-[65%] -mt-10">
           <SocialList />
           <Privacy />
         </div>
