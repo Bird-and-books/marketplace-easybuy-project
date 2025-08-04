@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import './StarRating.scss';
 
 export default function StarRating(intialRating = 0) {
   const [rating, setRating] = useState(intialRating);
@@ -10,15 +9,15 @@ export default function StarRating(intialRating = 0) {
     setRating(index);
   };
   return (
-    <div className="star-rating">
+    <div className="absolute bottom-2 left-2 flex bg-transparent z-1">
       {[...Array(5)].map((_, i) => {
         const index = i + 1;
         return (
           <svg
             key={index}
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
             fill={(hovered || rating) >= index ? '#df4300' : '#E0E0E0'}
             xmlns="http://www.w3.org/2000/svg"
             onClick={() => handleClick(index)}

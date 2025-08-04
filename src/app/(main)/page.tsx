@@ -1,7 +1,7 @@
 import Promo from '@/features/home/Promo/Promo';
 import FavoriteBrands from '@/features/home/FavoriteBrands/FavoriteBrands';
 import UkrainianBrands from '@/features/home/UkrainianBrands/UkrainianBrands';
-// import Recommendations from "@/features/home/Recommendations/Recommendations";
+import Recommendations from '@/features/home/Recommendations/Recommendations';
 import '@/styles/globals.scss';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
       <Promo />
       <FavoriteBrands />
       <UkrainianBrands />
-      {/*<Recommendations />*/}
+      <Recommendations />
     </div>
   );
 };
