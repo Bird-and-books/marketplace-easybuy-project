@@ -9,7 +9,7 @@ export default function StarRating(intialRating = 0) {
     setRating(index);
   };
   return (
-    <div className="absolute bottom-2 left-2 flex bg-transparent z-1">
+    <div className="absolute bottom-2 left-2 flex bg-transparent z-1 md:bottom-4 md:left-4 md:gap-x-1">
       {[...Array(5)].map((_, i) => {
         const index = i + 1;
         return (

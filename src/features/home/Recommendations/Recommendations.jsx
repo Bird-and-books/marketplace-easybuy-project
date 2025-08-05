@@ -56,9 +56,12 @@ export default function RecommendationsNew() {
           <LinkIcon className="transition-transform duration-300 ease-in-out group-hover:translate-x-[5px]" />
         </Link>
       </div>
-      <ul className="flex flex-wrap gap-x-2 gap-y-4">
+      <ul className="flex flex-wrap gap-x-2 gap-y-4 md:flex-nowrap md:gap-x-8 md:gap-y-0">
         {products.map((product, i) => (
-          <li key={i} className="max-w-[167px] bg-white shadow-main relative rounded-2xl">
+          <li
+            key={i}
+            className="max-w-[167px] bg-white shadow-main relative rounded-2xl md:max-w-[396px]"
+          >
             <ProductCard key={i} {...product} />
           </li>
         ))}
