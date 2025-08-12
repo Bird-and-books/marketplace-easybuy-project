@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  /*@apply text-main bg-background font-inter font-normal;*/
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  @apply mx-auto px-4 w-full;
+  max-width: 375px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .container {
+    max-width: 1680px;
+  }
+}
+
+.home-container {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.section-container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+/* Components Layer */
+/*@layer components {*/
+/*  .btnHeader {*/
+/*    @apply font-semibold leading-tight flex items-center justify-center*/
+/*    px-[22px] py-[10px] border-4 border-transparent rounded-lg*/
+/*    cursor-pointer transition-all duration-300 ease-in-out bg-transparent text-white2;*/
+/*  }*/
+
+/*  .btnHeader:hover {*/
+/*    @apply scale-105 bg-white/10 border;*/
+/*    border-color: theme('colors.btn-hover-border');*/
+/*    box-shadow: 0 0 14px 0 rgba(201, 223, 255, 0.52);*/
+/*  }*/
+
+/*  .btnHeader:active {*/
+/*    @apply scale-110 border-4;*/
+/*    border-color: theme('colors.btn-hover-border');*/
+/*  }*/
+
+/*  .gradient-button {*/
+/*    background: linear-gradient(0deg, #4b99ff 0%, #3e5b7e 54.72%, #071739 100%);*/
+/*    color: white;*/
+/*  }*/
+
+/*  .visually-hidden {*/
+/*    position: absolute;*/
+/*    width: 1px;*/
+/*    height: 1px;*/
+/*    margin: -1px;*/
+/*    border: 0;*/
+/*    padding: 0;*/
+/*    white-space: nowrap;*/
+/*    clip-path: inset(100%);*/
+/*    clip: rect(0 0 0 0);*/
+/*    overflow: hidden;*/
+/*  }*/
+/*}*/

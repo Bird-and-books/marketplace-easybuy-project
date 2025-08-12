@@ -3,7 +3,6 @@ import FooterSeller from '@/components/ui/footer-seller/FooterSeller.jsx';
 import SocialList from '@/components/ui/social-list/SocialList.jsx';
 import Privacy from '@/components/ui/privacy/Privacy.jsx';
 import LogoFooter from '@/components/ui/logo-footer/LogoFooter.jsx';
-import style from './Footer.module.scss';
 
 const Footer = () => {
   return (

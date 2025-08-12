@@ -3,16 +3,6 @@
 import { useState } from 'react';
 import SignUpForm from '@/features/auth/signup-form/SignUpForm.jsx';
 import SignInForm from '@/features/auth/sign-in/SignInForm.jsx';
-// import SignWith from '@/components/ui/sign-with/SignWith.jsx';
-// import GoogleAuthIcon from '@/components/icons/GoogleAuthIcon.jsx';
-// import FacebookAuthIcon from '@/components/icons/FacebookAuthIcon.jsx';
-// import AppleAuthIcon from '@/components/icons/AppleAuthIcon.jsx';
-
-// const providers = [
-//   { icon: GoogleAuthIcon, name: 'Google', href: '!#' },
-//   { icon: FacebookAuthIcon, name: 'Facebook', href: '!#' },
-//   { icon: AppleAuthIcon, name: 'Apple', href: '!#' },
-// ];
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -27,7 +17,6 @@ const Auth = () => {
               Sing up
             </button>
           </div>
-          {/*<SignWith providers={providers} />*/}
         </>
       ) : (
         <>
@@ -41,7 +30,6 @@ const Auth = () => {
               Log in
             </button>
           </div>
-          {/*<SignWith providers={providers} />*/}
         </>
       )}
     </>

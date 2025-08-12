@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Menu from '@/features/buyer/panel/Menu.jsx';
 import SectionContent from '@/features/buyer/panel/SectionContent.jsx';
-import '@/styles/globals.scss';
 
 const UserPanel = () => {
   const [activeSection, setActiveSection] = useState('menu');
