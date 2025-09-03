@@ -19,7 +19,7 @@ const Footer = () => {
         <div className={style.social}>
           <SocialList />
           <Privacy />
-        </div>
+        </div> 
       </div>
     </footer>
   );

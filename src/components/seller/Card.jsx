@@ -1,9 +1,9 @@
-import { cn } from '@/lib/utils';
+import classNames from 'classnames';
 
 export function Card({ className, children, ...props }) {
   return (
     <div
-      className={cn('bg-white rounded-2xl shadow-sm border border-gray-200', className)}
+      className={classNames('bg-white rounded-2xl shadow-sm border border-gray-200', className)}
       {...props}
     >
       {children}

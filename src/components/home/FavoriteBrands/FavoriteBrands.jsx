@@ -1,4 +1,4 @@
-import FavoritePromo from '@/features/home/FavoritePromo/FavoritePromo.jsx';
+import FavoritePromo from '@/components/home/FavoritePromo/FavoritePromo.jsx';
 import LinkIcon from '@/components/icons/LinkIcon.jsx';
 import Link from 'next/link';
 import SmallSlider from '@/components/ui/small-slider/SmallSlider';

@@ -1,6 +1,6 @@
-import Promo from '@/features/home/Promo/Promo';
-import FavoriteBrands from '@/features/home/FavoriteBrands/FavoriteBrands';
-import UkrainianBrands from '@/features/home/UkrainianBrands/UkrainianBrands';
+import Promo from '@/components/home/Promo/Promo';
+import FavoriteBrands from '@/components/home/FavoriteBrands/FavoriteBrands';
+import UkrainianBrands from '@/components/home/UkrainianBrands/UkrainianBrands';
 // import Recommendations from "@/features/home/Recommendations/Recommendations";
 import '@/styles/globals.scss';
 

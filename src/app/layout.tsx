@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import React from 'react';
-import Footer from '@/components/layout/footer/Footer';
-import Header from '@/components/layout/header/Header';
+
 import StoreProvider from '@/app/StoreProvider';
 import AppInit from '@/features/auth/AppInit';
 import { Toaster } from 'react-hot-toast';
@@ -36,9 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StoreProvider>
           <AppInit />
           <div className="layout">
-            <Header />
             <main className="main-content">{children}</main>
-            <Footer />
           </div>
         </StoreProvider>
         <Toaster />
