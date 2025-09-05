@@ -44,3 +44,7 @@ next-env.d.ts
 # ESLint & Prettier logs/cache
 .eslintcache
 .prettiercache
+
+
+# idea
+.idea

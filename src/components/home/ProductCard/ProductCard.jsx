@@ -5,7 +5,6 @@ import { useState } from 'react';
 import FavoriteBtn from '@/components/ui/favorite-btn/FavoriteBtn.jsx';
 import StarRating from '@/components/ui/star-rating/StarRating.jsx';
 import SmallCartIcon from '@/components/icons/SmallCartIcon.jsx';
-import './ProductCard.scss';
 
 export default function ProductCard({ isOnSale, image, title, brand, price, oldPrice, colors }) {
   const [isFavorite, setIsFavorite] = useState(false);
