@@ -1,5 +1,5 @@
 import Image from 'next/image.js';
-import MenuItem from '@/features/buyer/panel/MenuItem.jsx';
+import MenuItem from '@/components/buyer/panel/MenuItem.jsx';
 import ProfileIcon from '@/components/icons/mobile/ProfileIcon.jsx';
 import OrderIcon from '@/components/icons/mobile/OrderIcon.jsx';
 import CartIcon from '@/components/icons/mobile/CartIcon.jsx';

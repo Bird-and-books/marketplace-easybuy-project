@@ -1,24 +1,24 @@
 import PersonalData from '@/components/buyer/panel/sections/PersonalData.jsx';
-import Orders from '@/components/buyer/panel/sections/Orders.jsx';
-import Cart from '@/components/buyer/panel/sections/Cart.jsx';
-import Message from '@/components/buyer/panel/sections/Message.jsx';
-import Wishlist from '@/components/buyer/panel/sections/Wishlist.jsx';
-import Product from '@/components/buyer/panel/sections/Products.jsx';
-import Payment from '@/components/buyer/panel/sections/Payment.jsx';
-import Setting from '@/components/buyer/panel/sections/Setting.jsx';
-import Help from '@/components/buyer/panel/sections/Help.jsx';
+//import Orders from '@/components/buyer/panel/sections/Orders.jsx';
+//import Cart from '@/components/buyer/panel/sections/Cart.jsx';
+//import Message from '@/components/buyer/panel/sections/Message.jsx';
+//import Wishlist from '@/components/buyer/panel/sections/Wishlist.jsx';
+//import Product from '@/components/buyer/panel/sections/Products.jsx';
+//import Payment from '@/components/buyer/panel/sections/Payment.jsx';
+//import Setting from '@/components/buyer/panel/sections/Setting.jsx';
+//import Help from '@/components/buyer/panel/sections/Help.jsx';
 import LeftArrIcon from '@/components/icons/mobile/LeftArrIcon.jsx';
 
 const sections = {
   personalData: { label: 'Personal data', component: PersonalData },
-  orders: { label: 'My orders', component: Orders },
-  cart: { label: 'Cart', component: Cart },
-  message: { label: 'Message', component: Message },
-  wishlist: { label: 'Wishlist', component: Wishlist },
-  product: { label: 'Products to compare', component: Product },
-  payment: { label: 'Payment', component: Payment },
-  setting: { label: 'Settings', component: Setting },
-  help: { label: 'Help', component: Help },
+  // orders: { label: 'My orders', component: Orders },
+  // cart: { label: 'Cart', component: Cart },
+  // message: { label: 'Message', component: Message },
+  // wishlist: { label: 'Wishlist', component: Wishlist },
+  // product: { label: 'Products to compare', component: Product },
+  // payment: { label: 'Payment', component: Payment },
+  // setting: { label: 'Settings', component: Setting },
+  // help: { label: 'Help', component: Help },
 };
 
 const SectionContent = ({ sectionKey, onBack }) => {

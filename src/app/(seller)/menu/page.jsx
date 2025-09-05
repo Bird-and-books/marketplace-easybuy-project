@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@/components/ui/button/dropdown-button/DropdownBtn.jsx';
+import { Button } from '@/components/ui/button/dropdown-btn/DropdownBtn.jsx';
 import { useRouter } from 'next/navigation';
 
 export default function MenuPanel() {
