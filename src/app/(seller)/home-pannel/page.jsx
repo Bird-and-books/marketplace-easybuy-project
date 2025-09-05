@@ -2,8 +2,8 @@
 
 import { useRouter } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
-import { Card } from '@/(seller)/components/Card';
-import { CardContent } from '@/(seller)/components/CardContent';
+import { Card } from '@/components/seller/Card';
+import { CardContent } from '@/components/seller/CardContent';
 
 export default function HomePanel() {
   const router = useRouter();
