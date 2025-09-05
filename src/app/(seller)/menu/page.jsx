@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@/components/ui/button/dropdown-btn/DropdownBtn.jsx';
+//import { Button } from '@/components/ui/button/dropdown-btn/DropdownBtn.jsx';
 import { useRouter } from 'next/navigation';
 
 export default function MenuPanel() {
@@ -39,9 +39,9 @@ export default function MenuPanel() {
         </nav>
       </div>
       <div className="p-4">
-        <Button variant="outline" className="w-full bg-white text-blue-800">
+        {/* <Button variant="outline" className="w-full bg-white text-blue-800">
           Log out
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
