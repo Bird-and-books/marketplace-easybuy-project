@@ -1,7 +1,6 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { ArrowLeft } from 'lucide-react';
 import { Card } from '@/components/seller/Card';
 import { CardContent } from '@/components/seller/CardContent';
 
@@ -11,7 +10,6 @@ export default function HomePanel() {
   return (
     <div className="bg-gray-100 h-full px-4 pb-10 w-[375px] mx-auto">
       <div className="flex items-center py-4">
-        <ArrowLeft onClick={() => router.push('/seller/menu')} className="mr-2 cursor-pointer" />
         <h1 className="text-lg font-semibold">Home panel</h1>
       </div>
 
