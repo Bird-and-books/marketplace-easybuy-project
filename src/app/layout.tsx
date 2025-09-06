@@ -5,7 +5,7 @@ import StoreProvider from '@/app/StoreProvider';
 import AppInit from '@/features/auth/AppInit';
 import { Toaster } from 'react-hot-toast';
 import { Inter, DM_Sans, Zen_Dots } from 'next/font/google';
-import '../styles/globals.css';
+import '@/styles/globals.css';
 
 const inter = Inter({
   subsets: ['latin'],

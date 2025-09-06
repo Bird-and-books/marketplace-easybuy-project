@@ -29,16 +29,10 @@ export default function SmallSlider({
   return (
     <div
       className="
-      relative
-      w-full
-      max-w-screen-xl
-      mx-auto
-      mb-16
-      px-4
-      lg:px-0
-      overflow-visible
-      flex
-      items-center justify-center"
+      relative flex overflow-visible
+    w-full max-w-screen-xl
+    mx-auto mb-16 px-4 lg:px-0
+    items-center justify-center"
     >
       <SliderArrow
         direction="left"
