@@ -2,7 +2,7 @@
 
 import Image from 'next/image.js';
 import { useState } from 'react';
-import FavoriteBtn from '@/components/ui/favorite-btn/FavoriteBtn.jsx';
+import FavoriteBtn from '@/components/ui/button/favorite-btn/FavoriteBtn.jsx';
 import StarRating from '@/components/ui/star-rating/StarRating.jsx';
 import SmallCartIcon from '@/components/icons/SmallCartIcon.jsx';
 

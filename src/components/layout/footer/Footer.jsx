@@ -11,7 +11,6 @@ const Footer = () => {
         <div className="flex justify-left mb-13">
           <LogoFooter />
         </div>
-
         <div className="flex justify-between ">
           <FooterList />
           <FooterSeller />

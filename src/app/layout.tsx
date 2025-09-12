@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import React from 'react';
-import Footer from '@/components/layout/footer/Footer';
-import Header from '@/components/layout/header/Header';
+
 import StoreProvider from '@/app/StoreProvider';
 import AppInit from '@/features/auth/AppInit';
 import { Toaster } from 'react-hot-toast';
 import { Inter, DM_Sans, Zen_Dots } from 'next/font/google';
-import '../styles/globals.css';
+import '@/styles/globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,13 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.variable} ${dmSans.variable} ${zenDots.variable}`}>
         <StoreProvider>
           <AppInit />
-          <div className="layout">
-            <div className="main">Hello</div>
-            <h1 className="text-main text-[50px]">Hello</h1>
-            <Header />
-            <main className="main-content">{children}</main>
-            <Footer />
-          </div>
+          {children}
         </StoreProvider>
         <Toaster />
       </body>

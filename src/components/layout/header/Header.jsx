@@ -2,10 +2,10 @@
 
 import Link from 'next/link';
 import Logo from '@/components/ui/logo/Logo.jsx';
-import DropdownBtn from '@/components/ui/dropdown-btn/DropdownBtn.jsx';
+import DropdownBtn from '@/components/ui/button/dropdown-btn/DropdownBtn.jsx';
 import SearchBox from '@/components/ui/search-box/SearchBox.jsx';
 import HeaderIcons from '@/components/ui/header-icons/HeaderIcons.jsx';
-import BurgerButton from '@/components/ui/burger-btn/BurgerBtn.tsx';
+import BurgerButton from '@/components/ui/button/burger-btn/BurgerBtn.tsx';
 import { useSelector } from 'react-redux';
 import SignUp from '@/features/auth/sign-up-btn/SignUp';
 

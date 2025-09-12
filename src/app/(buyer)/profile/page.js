@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import Menu from '@/features/buyer/panel/Menu.jsx';
-import SectionContent from '@/features/buyer/panel/SectionContent.jsx';
+import Menu from '@/components/buyer/panel/Menu.jsx';
+import SectionContent from '@/components/buyer/panel/SectionContent.jsx';
 
 const UserPanel = () => {
   const [activeSection, setActiveSection] = useState('menu');
