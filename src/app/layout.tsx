@@ -34,10 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.variable} ${dmSans.variable} ${zenDots.variable}`}>
         <StoreProvider>
           <AppInit />
-          <div className="layout">
-            <div className="main">Hello</div>
-            <main className="main-content">{children}</main>
-          </div>
+          {children}
         </StoreProvider>
         <Toaster />
       </body>

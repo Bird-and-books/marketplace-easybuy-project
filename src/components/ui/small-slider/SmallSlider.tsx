@@ -27,13 +27,7 @@ export default function SmallSlider({
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <div
-      className="
-      relative flex overflow-visible
-    w-full max-w-screen-xl
-    mx-auto mb-16 px-4 lg:px-0
-    items-center justify-center"
-    >
+    <div className="relative flex overflow-visible w-full max-w-screen-xl mx-auto mb-16 px-4 lg:px-0 items-center justify-center">
       <SliderArrow
         direction="left"
         onClick={() => swiperRef.current?.slidePrev()}
