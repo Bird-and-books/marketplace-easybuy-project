@@ -1,4 +1,4 @@
-import BuyerForm from '@/components/buyer/buyer-form/BuyerForm.jsx';
+import BuyerForm from '@/pages/Buyer/buyer-form/BuyerForm.jsx';
 
 export default function UserProfileFormik() {
   const userData = {
