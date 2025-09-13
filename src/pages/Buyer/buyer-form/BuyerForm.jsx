@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
-import EditIcon from '../../../components/icons/mobile/EditIcon.jsx';
+import EditIcon from '@/components/icons/mobile/EditIcon.jsx';
 
 export default function BuyerForm({ title, initialData }) {
   const [userData, setUserData] = useState(initialData);
