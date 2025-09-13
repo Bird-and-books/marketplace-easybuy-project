@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-export function Card({ className, children, ...props }) {
+const Card = () => {
   return (
     <div
       className={classNames('bg-white rounded-2xl shadow-sm border border-gray-200', className)}
@@ -9,4 +9,6 @@ export function Card({ className, children, ...props }) {
       {children}
     </div>
   );
-}
+};
+
+export default Card;

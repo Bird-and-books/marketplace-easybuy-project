@@ -1,9 +1,11 @@
 import classNames from 'classnames';
 
-export function CardContent({ className, children, ...props }) {
+const CardContent = () => {
   return (
     <div className={classNames('p-4', className)} {...props}>
       {children}
     </div>
   );
-}
+};
+
+export default CardContent;
