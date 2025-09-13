@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import ProfileIcon from '@/components/icons/ProfileIcon.jsx';
-import Modal from '@/components/ui/modal/Modal';
+import Modal from '@/components/modal/Modal';
 import Auth from '@/features/auth/Auth';
 
 const SignUp = () => {

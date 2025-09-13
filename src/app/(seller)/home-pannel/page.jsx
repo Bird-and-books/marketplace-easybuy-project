@@ -1,8 +1,8 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Card } from '@/components/seller/Card';
-import { CardContent } from '@/components/seller/CardContent';
+import { Card } from '@/pages/Seller/Card';
+import { CardContent } from '@/pages/Seller/CardContent';
 
 export default function HomePanel() {
   const router = useRouter();

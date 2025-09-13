@@ -6,10 +6,10 @@ import { useState } from 'react';
 import HideIcon from '@/components/icons/HideIcon.tsx';
 import ShowIcon from '@/components/icons/ShowIcon.tsx';
 import { useDispatch } from 'react-redux';
-import { register } from '@/lib/redux/auth/operations';
+import { register } from '@/store/auth/operations';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
-import TextInput from '@/components/ui/input/TextInput';
+import TextInput from '@/components/input/TextInput';
 
 const registrationSchema = Yup.object().shape({
   email: Yup.string().email('Invalid email').required('Required'),

@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/ui/logo/Logo.jsx",
+    "src/components/logo/Logo.jsx",
     "src/app/(buyer)/profile/page.js"
   ],
   "exclude": ["node_modules"]

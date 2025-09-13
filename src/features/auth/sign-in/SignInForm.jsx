@@ -8,8 +8,8 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
-import { login } from '@/lib/redux/auth/operations.ts';
-import TextInput from '@/components/ui/input/TextInput';
+import { login } from '@/store/auth/operations';
+import TextInput from '@/components/input/TextInput';
 
 const loginSchema = Yup.object().shape({
   email: Yup.string().email('Invalid email').required('Required'),

@@ -2,9 +2,9 @@
 
 import { useEffect } from 'react';
 import axios from 'axios';
-import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks';
-import { setAccessToken } from '@/lib/redux/auth/slice';
-import { refreshUser } from '@/lib/redux/auth/operations';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
+import { setAccessToken } from '@/store/auth/slice';
+import { refreshUser } from '@/store/auth/operations';
 
 const AppInit = () => {
   const dispatch = useAppDispatch();
