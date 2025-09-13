@@ -1,25 +1,24 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Card } from '@/pages/Seller/Card';
-import { CardContent } from '@/pages/Seller/CardContent';
 
 export default function HomePanel() {
   const router = useRouter();
 
   return (
-    <div className="bg-gray-100 h-full px-4 pb-10 w-[375px] mx-auto">
-      <div className="flex items-center py-4">
-        <h1 className="text-lg font-semibold">Home panel</h1>
-      </div>
+    <>
+      <div className="bg-gray-100 h-full px-4 pb-10 w-[375px] mx-auto">
+        <div className="flex items-center py-4">
+          <h1 className="text-lg font-semibold">Home panel</h1>
+        </div>
 
-      <div className="mb-4 text-sm text-blue-700">General overview</div>
-      <select className="mb-4 w-full rounded px-3 py-2 border text-sm">
-        <option>Last 30 days</option>
-      </select>
+        <div className="mb-4 text-sm text-blue-700">General overview</div>
+        <select className="mb-4 w-full rounded px-3 py-2 border text-sm">
+          <option>Last 30 days</option>
+        </select>
 
-      <div className="flex flex-col gap-4">
-        <Card>
+        <div className="flex flex-col gap-4">
+          {/* <Card>
           <CardContent className="p-4 text-sm">
             <p>Number of orders</p>
             <p>
@@ -71,8 +70,7 @@ export default function HomePanel() {
         <Card>
           <CardContent className="p-4">
             <p className="mb-2">Income, UAH</p>
-            <div className="h-40 bg-gray-200 rounded"></div>
-            {/* Placeholder for chart */}
+            <div className="h-40 bg-gray-200 rounded"></div>Placeholder for chart 
           </CardContent>
         </Card>
 
@@ -95,8 +93,9 @@ export default function HomePanel() {
               Number of completed orders: <strong>578</strong>
             </p>
           </CardContent>
-        </Card>
+        </Card>*/}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
