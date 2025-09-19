@@ -6,7 +6,7 @@ import LogoFooter from '@/components/footer/logo-footer/LogoFooter.jsx';
 
 const Footer = () => {
   return (
-    <footer className="hidden md:block bg-main pt-6 pb-7">
+    <footer className="bg-primary text-white hidden md:block bg-main pt-6 pb-7">
       <div className="container">
         <div className="flex justify-left mb-13">
           <LogoFooter />
