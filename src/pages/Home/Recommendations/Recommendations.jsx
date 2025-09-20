@@ -2,8 +2,7 @@ import ProductCard from '../ProductCard/ProductCard.jsx';
 import LinkIcon from '@/components/icons/LinkIcon.jsx';
 import Link from 'next/link';
 
-export default function RecommendationsNew() {
-  const products = [
+const products = [
     {
       image: '/img/product/woman-rec.png',
       title: "Women's Midi Slip Dress",
@@ -40,7 +39,9 @@ export default function RecommendationsNew() {
       brand: 'Disney',
       colors: ['#000000'],
     },
-  ];
+];
+
+export default function RecommendationsNew() {
   return (
     <section className="section-container">
       <div className="flex items-center justify-between mb-[24px] lg:mb-[72px] border-b border-dashed ">
@@ -57,12 +58,12 @@ export default function RecommendationsNew() {
         </Link>
       </div>
       <ul className="flex flex-wrap gap-x-2 gap-y-4 md:flex-nowrap md:gap-x-8 md:gap-y-0">
-        {products.map((product, i) => (
+        {products.map((product) => (
           <li
-            key={i}
+            key={product.title}
             className="max-w-[167px] bg-white shadow-main relative rounded-2xl md:max-w-[396px]"
           >
-            <ProductCard key={i} {...product} />
+            <ProductCard {...product} />
           </li>
         ))}
       </ul>

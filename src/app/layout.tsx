@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import React from 'react';
 
 import StoreProvider from '@/app/StoreProvider';
-import AppInit from '@/features/auth/AppInit';
 import { Toaster } from 'react-hot-toast';
 import { Inter, DM_Sans, Zen_Dots } from 'next/font/google';
 import '@/styles/globals.css';
@@ -33,11 +32,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${dmSans.variable} ${zenDots.variable}`}>
         <StoreProvider>
-          <AppInit />
           {children}
         </StoreProvider>
         <Toaster />
       </body>
     </html>
-  );
+  )
 }

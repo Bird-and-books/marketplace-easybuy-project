@@ -27,16 +27,16 @@ export default function ProductCard({ isOnSale, image, title, brand, price, oldP
       </button>
       <div className="px-2 md:px-6">
         <div className="mb-2 md:mb-3 md:flex md:items-center gap-x-2">
-          <span className="font-dm font-bold md:text-2xl">${price.toFixed(2)}</span>
+          <span className="font-dm font-bold md:text-2xl">${price?.toFixed(2)}</span>
           {oldPrice && (
-            <span className="hidden md:block md:line-through">${oldPrice.toFixed(2)}</span>
+            <span className="hidden md:block md:line-through">${oldPrice?.toFixed(2)}</span>
           )}
         </div>
         <p className="text-sm font-medium mb-2 md:text-xl md:mb-3">{title}</p>
         <p className="text-xs mb-2 md:text-base md:mb-3">{brand}</p>
 
         <div className="hidden md:flex gap-x-4 mb-13">
-          {colors.map((color, idx) => (
+          {colors?.map((color, idx) => (
             <span key={idx} className="w-6 h-6 " style={{ backgroundColor: color }}></span>
           ))}
         </div>

@@ -1,4 +1,7 @@
-import Image from 'next/image.js';
+'use client';
+import dynamic from 'next/dynamic';
+
+import Image from 'next/image.js'
 import MenuItem from '@/pages/Buyer/panel/MenuItem.jsx';
 import ProfileIcon from '@/components/icons/mobile/ProfileIcon.jsx';
 import OrderIcon from '@/components/icons/mobile/OrderIcon.jsx';
@@ -8,9 +11,9 @@ import WishListIcon from '@/components/icons/mobile/WishListIcon.jsx';
 import CompareIcon from '@/components/icons/mobile/CompareIcon.jsx';
 import PaymentIcon from '@/components/icons/mobile/PaymentIcon.jsx';
 import RightArrIcon from '@/components/icons/mobile/RightArrIcon.jsx';
-import { useDispatch } from 'react-redux';
 import { logOut } from '@/store/auth/operations';
 import PrivateRoute from '@/features/auth/private-route/PrivateRoute';
+import { useAppDispatch } from '@/store/hooks'
 
 const sections = {
   personalData: { label: 'Personal data', icon: <ProfileIcon /> },
@@ -23,7 +26,7 @@ const sections = {
 };
 
 const Menu = ({ setActiveSection }) => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const handleLogout = () => {
     dispatch(logOut());
@@ -72,4 +75,7 @@ const Menu = ({ setActiveSection }) => {
   );
 };
 
-export default Menu;
+export default dynamic(() => import('./Menu'), {
+  ssr: false,
+  loading: () => <div>Loading menu...</div>
+});;
