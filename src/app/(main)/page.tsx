@@ -1,7 +1,7 @@
-import Promo from '@/components/home/Promo/Promo';
-import FavoriteBrands from '@/components/home/FavoriteBrands/FavoriteBrands';
-import UkrainianBrands from '@/components/home/UkrainianBrands/UkrainianBrands';
-import Recommendations from '@/components/home/Recommendations/Recommendations';
+import Promo from '@/pages/Home/Promo/Promo';
+import FavoriteBrands from '@/pages/Home/FavoriteBrands/FavoriteBrands';
+import UkrainianBrands from '@/pages/Home/UkrainianBrands/UkrainianBrands';
+import Recommendations from '@/pages/Home/Recommendations/Recommendations';
 
 const Home = () => {
   return (

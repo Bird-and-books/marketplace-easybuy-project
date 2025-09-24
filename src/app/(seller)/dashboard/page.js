@@ -1,6 +1,6 @@
-"use client";
-import React from "react";
-import SellerProfile from "@/components/SellerProfile";
+'use client';
+import React from 'react';
+import SellerProfile from '@/pages/Seller/SellerProfile';
 
 export default function SellerProfilePage() {
   return (
