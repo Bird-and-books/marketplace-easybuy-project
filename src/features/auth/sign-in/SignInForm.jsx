@@ -70,10 +70,10 @@ const SignInForm = () => {
         onSubmit={handleSubmit}
       >
         <Form className="flex flex-col text-black">
-          <TextInput name="email" label="Email" placeholder="Enter Email" />
+          <TextInput id="email" label="Email" placeholder="Enter Email" />
 
           <TextInput
-            name="password"
+            id="password"
             label="Password"
             placeholder="Enter password"
             type="password"
