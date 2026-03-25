@@ -13,26 +13,43 @@ const Header = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
   return (
-    <header className="bg-main shadow-main border4 border-solid border-[#5e7ea6] ">
-      <nav className="w-full flex items-center justify-between py-5 py-0 container">
-        <BurgerButton />
-        <Logo />
-        <DropdownBtn />
-        <Link className="hidden lg:block btnHeader text-[32px]" href="/sale">
-          Sale
-        </Link>
-        <SearchBox />
-        <HeaderIcons />
+    <header className="header">
+      <nav className="header-inner container">
+        {/* MOBILE: один ряд */}
+        <div className="flex items-center justify-between gap-3 lg:hidden h-[112px]">
+          <BurgerButton />
+          <Logo />
+          <div className="flex-1 min-w-0">
+            <SearchBox />
+          </div>
+          <HeaderIcons />
+        </div>
 
-        {isLoggedIn ? (
-          <Link className="hidden lg:block " href="/profile">
-            <p className="w-16 h-16 rounded-[50%] bg-white flex items-center justify-center text-xl">
-              P
-            </p>
-          </Link>
-        ) : (
-          <SignUp />
-        )}
+        {/* DESKTOP */}
+        <div className="hidden lg:flex items-center justify-between h-[112px]">
+          <div className="flex items-center gap-6">
+            <Logo />
+            <DropdownBtn />
+            <Link className="btnHeader text-[32px]" href="/sale">
+              Sale
+            </Link>
+          </div>
+
+          <div className="flex items-center gap-6">
+            <SearchBox />
+            <HeaderIcons />
+
+            {isLoggedIn ? (
+              <Link href="/profile">
+                <p className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-xl">
+                  P
+                </p>
+              </Link>
+            ) : (
+              <SignUp />
+            )}
+          </div>
+        </div>
       </nav>
     </header>
   );

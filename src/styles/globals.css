@@ -1,46 +1,94 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  /* Surfaces */
+  --color-bg: #f8f9fb;
+  --color-surface: #ffffff;
+  --color-bg-subtle: #eeecf4;
+  --color-gray-100: #e7e8ec;
+
+  /* Brand */
+  --color-brand-700: #104c9a;
+  --color-brand-400: #6391c8;
+
+  /* Content */
+  --color-text: #000914;
+  --color-text-strong: #1f1f1f;
+  --color-on-brand: #fff5ee;
+
+  /* UI */
+  --color-border: #e2e2e2;
+  --color-header-border: #5e7ea6;
+  --color-link: #2080c0;
+  --color-disabled: #787e86;
+  --color-like-active: #6391c8;
+
+  /* States */
+  --color-danger: #ff4e64;
+  --color-success: #00ae37;
+
+  /* Gradients (background-image) */
+  --gradient-brand: linear-gradient(180deg, #4b99ff 0%, #3e5b7e 55%, #071739 100%);
+  --gradient-accent: linear-gradient(180deg, #ff7400 0%, #df4300 100%);
+
+  /* 🖋️ ШРИФТИ */
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+
+  /* 🌫 ТІНЬ */
+  --shadow-main: 0 8px 24px rgb(0 0 0 / 0.15);
+  --shadow-header: 0 4px 4px rgb(0 0 0 / 0.25);
+  --shadow-glow: 0 0 14px rgb(201 223 255 / 0.52);
+
+  /* Radii */
+  --radius-btn: 12px;
+  --radius-input: 8px;
+}
 
 /* Base Styles */
-html {
-  scroll-behavior: smooth;
-  text-rendering: optimizeLegibility;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
 
-body {
-  /*@apply text-main bg-background font-inter font-normal;*/
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 100%;
-  margin: 0;
-}
-
-/* Container */
-.container {
-  @apply mx-auto px-4 w-full;
-  max-width: 375px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
+  body {
+    /*@apply text-main bg-background font-inter font-normal;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    margin: 0;
   }
 }
+@layer components {
+  .header {
+    background: var(--color-brand-700);
+    color: var(--color-on-brand);
+    box-shadow: var(--shadow-header);
+    border-bottom: 4px solid var(--color-header-border);
+  }
 
-@media (min-width: 1680px) {
-  .container {
+  .header-inner {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
     max-width: 1680px;
   }
-}
 
-.home-container {
-  max-width: 1680px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
+  /* Container перевірити де використовую home-container(wrap) і може прописати класами в компонентах, 
+  section-containerможна замінити  на  36px = py-9*/
 
-.section-container {
-  padding-top: 36px;
-  padding-bottom: 36px;
+  .home-wrap {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 1rem 40px;
+  }
+
+  .section-container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
 }
 
 /* Components Layer */

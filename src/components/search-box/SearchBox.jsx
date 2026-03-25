@@ -12,16 +12,13 @@ const SearchBox = () => {
         />
       </div>
       <button
-        className="
+        className="bg-[image:var(--gradient-accent)]
         rounded-l-none
     hidden md:block font-medium text-[16px] rounded-r-[8px]
     px-[13px] py-[15px] w-[104px] text-white2 cursor-pointer
     bg-orange-gradient hover:bg-orange-gradient-hover
     transition-all duration-300
   "
-        style={{
-          background: 'linear-gradient(180deg, #ff7400 0%, #df4300 100%)',
-        }}
       >
         Search
       </button>
